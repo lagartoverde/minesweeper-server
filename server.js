@@ -5,23 +5,25 @@ const bodyParser = require('body-parser')
 require('./database')
 const Score = require('./Entities/Score')
 
+const port = process.env.PORT || 9000
+
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.get('/getLeaderBoard', (req, res) => {
   let callbacks = 0
   let response = {}
-  Score.find({mode: 'easy'}, (err,scores) => {
+  Score.find({mode: 'easy'},null,{ skip:0, limit:10, sort:{ seconds: 1 }}, (err,scores) => {
     response.easy = scores
     callbacks++;
     if(callbacks === 3) res.json(response)
-  })
-  Score.find({mode: 'medium'}, (err,scores) => {
+  }).catch(console.log)
+  Score.find({mode: 'medium'},null,{ skip:0, limit:10, sort:{ seconds: 1 }}, (err,scores) => {
     response.medium = scores
     callbacks++;
     if(callbacks === 3) res.json(response)
   })
-  Score.find({mode: 'hard'}, (err,scores) => {
+  Score.find({mode: 'hard'},null,{ skip:0, limit:10, sort:{ seconds: 1 }}, (err,scores) => {
     response.hard = scores
     callbacks++;
     if(callbacks === 3) res.json(response)
@@ -35,6 +37,6 @@ app.post('/newScore', (req,res) => {
     .catch((err) => res.json({success: false, message: err}))
 })
 
-app.listen('9000', () => {
+app.listen(port, () => {
   console.log('server is listening on port 9000')
 })
