@@ -9,8 +9,22 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.get('/getLeaderBoard', (req, res) => {
-  Score.find({}, (err,scores) => {
-    res.json(scores)
+  let callbacks = 0
+  let response = {}
+  Score.find({mode: 'easy'}, (err,scores) => {
+    response.easy = scores
+    callbacks++;
+    if(callbacks === 3) res.json(response)
+  })
+  Score.find({mode: 'medium'}, (err,scores) => {
+    response.medium = scores
+    callbacks++;
+    if(callbacks === 3) res.json(response)
+  })
+  Score.find({mode: 'hard'}, (err,scores) => {
+    response.hard = scores
+    callbacks++;
+    if(callbacks === 3) res.json(response)
   })
 })
 
