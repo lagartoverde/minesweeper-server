@@ -16,6 +16,10 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.get('/', (req,res) => {
+  res.end('Hello World!')
+})
+
 app.get('/getLeaderboard', (req, res) => {
   let callbacks = 0
   let response = {}
