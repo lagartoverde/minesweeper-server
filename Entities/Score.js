@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const ScoreSchema = new mongoose.Schema({
-  name: String,
+  username: String,
   seconds: Number,
   mode: String
 })

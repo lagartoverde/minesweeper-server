@@ -1,4 +1,4 @@
 const mongoose = require('mongoose')
-const keys = require('./keys') 
+const {mongoDbUrl} = require('./keys') 
 
-mongoose.connect(keys.mongoDbUrl)
+mongoose.connect(mongoDbUrl)

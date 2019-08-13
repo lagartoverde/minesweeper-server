@@ -1,0 +1,122 @@
+{
+  "1": {
+    "previousExp": 0,
+    "lvlExp": 500
+  },
+  "2": {
+    "previousExp": 500,
+    "lvlExp": 1000
+  },
+  "3": {
+    "previousExp": 1500,
+    "lvlExp": 2500
+  },
+  "4": {
+    "previousExp": 4000,
+    "lvlExp": 5000
+  },
+  "5": {
+    "previousExp": 9000,
+    "lvlExp": 6000
+  },
+  "6": {
+    "previousExp": 15000,
+    "lvlExp": 7000
+  },
+  "7": {
+    "previousExp": 22000,
+    "lvlExp": 8000
+  },
+  "8": {
+    "previousExp": 30000,
+    "lvlExp": 9000
+  },
+  "9": {
+    "previousExp": 39000,
+    "lvlExp": 10000
+  },
+  "10": {
+    "previousExp": 49000,
+    "lvlExp": 15000
+  },
+  "11": {
+    "previousExp": 64000,
+    "lvlExp": 20000
+  },
+  "12": {
+    "previousExp": 84000,
+    "lvlExp": 30000
+  },
+  "13": {
+    "previousExp": 114000,
+    "lvlExp": 40000
+  },
+  "14": {
+    "previousExp": 154000,
+    "lvlExp": 50000
+  },
+  "15": {
+    "previousExp": 204000,
+    "lvlExp": 60000
+  },
+  "16": {
+    "previousExp": 264000,
+    "lvlExp": 70000
+  },
+  "17": {
+    "previousExp": 334000,
+    "lvlExp": 80000
+  },
+  "18": {
+    "previousExp": 414000,
+    "lvlExp": 90000
+  },
+  "19": {
+    "previousExp": 504000,
+    "lvlExp": 100000
+  },
+  "20": {
+    "previousExp": 604000,
+    "lvlExp": 125000
+  },
+  "21": {
+    "previousExp": 729000,
+    "lvlExp": 150000
+  },
+  "22": {
+    "previousExp": 879000,
+    "lvlExp": 175000
+  },
+  "23": {
+    "previousExp": 1054000,
+    "lvlExp": 200000
+  },
+  "24": {
+    "previousExp": 1254000,
+    "lvlExp": 225000
+  },
+  "25": {
+    "previousExp": 1479000,
+    "lvlExp": 250000
+  },
+  "26": {
+    "previousExp": 1729000,
+    "lvlExp": 300000
+  },
+  "27": {
+    "previousExp": 2029000,
+    "lvlExp": 350000
+  },
+  "28": {
+    "previousExp": 2379000,
+    "lvlExp": 400000
+  },
+  "29": {
+    "previousExp": 2779000,
+    "lvlExp": 450000
+  },
+  "30": {
+    "previousExp": 3229000,
+    "lvlExp": 500000
+  }
+}
