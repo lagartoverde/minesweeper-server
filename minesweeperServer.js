@@ -48,7 +48,7 @@ app.use((req,res,next) => {
 })
 
 app.get('/', (req,res) => {
-  res.end('Hello World! Updated')
+  res.end('Hello World! Updated 2')
 })
 
 app.use('/leaderboard', leaderboardController);
